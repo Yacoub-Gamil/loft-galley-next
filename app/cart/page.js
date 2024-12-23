@@ -1,5 +1,7 @@
+import CartOverview from "../_components/CartOverview";
+
 function page() {
-  return <div>Cart</div>;
+  return <CartOverview />;
 }
 
 export default page;

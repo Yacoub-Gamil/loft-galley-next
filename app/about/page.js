@@ -1,5 +1,7 @@
+import AboutUs from "../_components/AboutUs";
+
 function page() {
-  return <div>About</div>;
+  return <AboutUs />;
 }
 
 export default page;
