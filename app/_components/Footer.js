@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="  border-t xl:mt-[4rem] xl:grid grid-cols-3 items-center text-[#52525b] bg-white">
+    <div className="  text-[#52525b] bg-white">
       <div className=" flex justify-center">
         <Image className="xs:w-[8rem] xl:w-[8rem]" src={logo} alt="" />
       </div>

@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <div className=" sticky top-0 bg-white z-50">
-      <div className=" mx-[4rem] grid grid-cols-[auto_1fr_auto] place-content-center ">
+      <div className=" mx-[4rem] grid grid-cols-[auto_1fr_auto] place-content-center">
         <div className=" w-[8rem]">
           <Image src={logo} alt="loft logo" className=" object-contain" />
         </div>
