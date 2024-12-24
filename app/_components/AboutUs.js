@@ -17,7 +17,7 @@ function AboutUs() {
   return (
     <div id="aboutUs" className=" container mx-auto">
       {/* 1 */}
-      <div className=" xl:w-full mx-auto xl:flex mb-[2rem] text-slate-100">
+      <div className=" xl:w-full mx-auto xl:flex mb-[2rem] ">
         <div className="w-full">
           <h1 className=" font-bold xs:mx-1 xl:text-[2rem] mt-[1.4rem] mb-[.5rem]">
             loft gallery
@@ -61,7 +61,7 @@ function AboutUs() {
             alt=""
           />
         </div>
-        <div className=" w-full xl:w-[40rem] text-slate-100">
+        <div className=" w-full xl:w-[40rem] text-[#1b1b1b]">
           <h1 className=" xs:mx-1 xl:text-[2rem] font-bold  mb-[.5rem] ">
             Hani Gamil
           </h1>

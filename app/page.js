@@ -9,7 +9,7 @@ import HeroCardHome from "./_components/HeroCardHome";
 export default function Home() {
   return (
     <main className="">
-      <div className=" w-[12rem] left-[45%] absolute z-30 ">
+      <div className=" w-[12rem] left-[45%] absolute z-30 bg-white ">
         <img src="logo.png" alt="" />
       </div>
 
