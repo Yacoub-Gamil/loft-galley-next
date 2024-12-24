@@ -25,9 +25,9 @@ function Header() {
   return (
     <div className=" sticky top-0 bg-white z-50">
       <div className=" mx-[4rem] grid grid-cols-[auto_1fr_auto] place-content-center">
-        <div className=" w-[8rem]">
+        <Link href="/" className=" w-[8rem]">
           <Image src={logo} alt="loft logo" className=" object-contain" />
-        </div>
+        </Link>
         <div className=" flex justify-center items-center relative">
           <div className=" text-[1rem]  flex gap-10 mt-[2.8rem] tracking-widest  font-serif text-black uppercase">
             {/* Navigation Links  */}

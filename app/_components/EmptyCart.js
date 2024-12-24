@@ -30,7 +30,7 @@ function EmptyCart() {
           </p>
           <div className="flex justify-center">
             <Link
-              href="/"
+              href="/collection"
               className="italic text-black hover:scale-105 duration-300 border-b font-semibold px-4 py-1 rounded-md mt-[1rem] text-center sx:text-[.8rem] xl:text-[1.4rem] flex items-center gap-6"
             >
               <h1>Go fill it </h1>
