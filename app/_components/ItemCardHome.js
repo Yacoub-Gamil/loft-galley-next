@@ -55,32 +55,32 @@ const itemsLink = [
 
 function ItemCardHome() {
   return (
-    <div className=" mx-auto container mt-4">
-      <h1 className=" text-[3rem] font-serif text-center text-[#1b1b1b]">
+    <div className=" mx-auto xl:container mt-4">
+      <h1 className=" w-full xs:text-[1rem] xl:text-[3rem] font-serif text-center text-[#1b1b1b]">
         Luxurious Haven Collection
       </h1>
 
-      <div className="flex justify-center gap-10 mt-[2rem] mb-8 text-[#1b1b1b] text-[1.2rem]  opacity-70 ">
+      <div className=" flex justify-center xs:text-[.8rem] xs:gap-4  xl:gap-10 mt-[2rem] mb-8 text-[#1b1b1b] xl:text-[1.2rem] opacity-70 ">
         <h2 className=" flex items-center gap-1">
-          <SiHomeassistantcommunitystore /> Home Decoration
+          <SiHomeassistantcommunitystore /> Home 
         </h2>
         <h2 className=" flex items-center gap-1">
-          <HiMiniBuildingOffice2 /> Office Decoration
+          <HiMiniBuildingOffice2 /> Office 
         </h2>
         <h2 className=" flex items-center gap-1">
           {" "}
-          <MdCameraIndoor /> Indoor Decoration
+          <MdCameraIndoor /> Indoor 
         </h2>
         <h2 className=" flex items-center gap-1">
-          <FaBuildingCircleArrowRight /> Outdoor Decoration
+          <FaBuildingCircleArrowRight /> Outdoor
         </h2>
       </div>
 
-      <div className=" w-[90%] mx-auto grid grid-cols-4 gap-2">
+      <div className=" xl:w-[90%] xs:w-[21rem] xs:mx-auto  xl:mx-auto grid xs:grid-cols-1 xl:grid-cols-4 gap-8 xl:gap-2">
         {itemsLink.map((item) => (
           <div key={item.link} className=" flex flex-col items-center">
             <div
-              className={`group cursor-pointer relative w-full h-[22rem] mb-4 bg-[#f1f5f8] bg-gradient-to-b from-black to-bg-[#1b1b1b] rounded-md overflow-hidden`}
+              className={`group cursor-pointer relative w-full xs:h-[18rem] xl:h-[22rem] mb-4 bg-[#f1f5f8] bg-gradient-to-b from-black to-bg-[#1b1b1b] rounded-md overflow-hidden`}
             >
               <Image
                 src={item.image}
@@ -92,8 +92,8 @@ function ItemCardHome() {
                 {item.name}
               </h1>
 
-              <div className=" group-hover:opacity-100  flex flex-col items-center duration-300 opacity-0 bg-gradient-to-t from-[#1b1b1b] to-bg-[#f1f5f8] h-full absolute w-full ">
-                <div className="w-[23rem] h-[23rem]  group-hover:scale-105  duration-300 ">
+              <div className=" group-hover:opacity-100 flex flex-col items-center duration-300 opacity-0 bg-gradient-to-t from-[#1b1b1b] to-bg-[#f1f5f8] h-full absolute w-full ">
+                <div className="xl:w-[23rem]  xl:h-[23rem] xs:w-[12rem] xs:h-[15rem] group-hover:scale-105  duration-300 ">
                   <Image
                     src={item.image2}
                     alt=""
@@ -104,10 +104,10 @@ function ItemCardHome() {
 
                 <Link
                   href={item.link}
-                  className=" group italic absolute bottom-4 flex uppercase tracking-wider rounded-lg  text-[1rem] font-semibold z-30 hover:scale-105 duration-300 text-white px-4 py-1"
+                  className=" group italic absolute bottom-4 flex uppercase tracking-wider rounded-lg  xl:text-[1rem] font-semibold z-30 hover:scale-105 duration-300 text-white px-4 py-1"
                 >
                   Discover More
-                  <FaLocationArrow className=" text-[1.2rem] text-orange-600 mt-[-.5rem] " />
+                  <FaLocationArrow className=" xl:text-[1.2rem] text-orange-600 mt-[-.5rem] " />
                 </Link>
               </div>
             </div>
@@ -121,7 +121,7 @@ function ItemCardHome() {
                 className=" group font-serif capitalize text-[1.2rem] duration-300 opacity-85 tracking-wider  justify-center flex items-center "
               >
                 {item.descrption}
-                <FaLocationArrow className="text-[1.3rem] group-hover:opacity-100 duration-300 opacity-0 text-orange-600 " />
+                <FaLocationArrow className=" xl:text-[1.3rem] group-hover:opacity-100 duration-300 opacity-0 text-orange-600 " />
               </Link>
             </div>
           </div>

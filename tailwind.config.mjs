@@ -6,6 +6,15 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: "375px",
+        sm: "540px",
+        md: "720px",
+        lg: "960px",
+        xl: "1140px",
+        xxl: "1320px",
+      },
+    },
   },
 };
