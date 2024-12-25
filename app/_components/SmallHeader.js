@@ -7,6 +7,7 @@ import { PiLampPendantLight } from "react-icons/pi";
 import { usePathname } from "next/navigation";
 
 const pagesLinks = [
+  { name: "all", href: "/collection", icon: <FaChair /> },
   { name: "thonet", href: "/collection/thonet", icon: <FaChair /> },
   { name: "trays", href: "/collection/trays", icon: <GiPaperTray /> },
   { name: "modern", href: "/collection/modern", icon: <HiHomeModern /> },
