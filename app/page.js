@@ -19,12 +19,22 @@ export default function Home() {
           alt="loft gallery "
         />
         <div className="w-full h-full absolute flex justify-center items-center z-30">
-          <div className="flex flex-col items-center gap-4 bg-white bg-opacity-90 shadow-[0px_0px_5px_5px_#e2e8f0] p-4 xs:w-[20rem] xl:w-[40rem]">
-            <img src="logo.png" alt="loft logo" className=" xs:w-[8rem] xl:w-[14rem]"/>
-            <p className=" xl:text-[2rem] italic font-serif">Still better, visit us in <span className=" text-[#dc2626] xs:text-[1.4rem] xl:text-[2.3rem]">person!</span> </p>
+          <div className="flex flex-col items-center gap-4 bg-white bg-opacity-90 shadow-[0px_0px_5px_5px_#e2e8f0] p-4 xs:w-[20rem] xl:w-[40rem] lg:w-[30rem]">
+            <img
+              src="logo.png"
+              alt="loft logo"
+              className=" xs:w-[8rem] xl:w-[14rem]"
+            />
+            <p className=" xl:text-[2rem] lg:text-[1.2rem] italic font-serif">
+              Still better, visit us in{" "}
+              <span className=" text-[#dc2626] xs:text-[1.4rem] xl:text-[2.3rem] lg:text-[2rem]">
+                person!
+              </span>{" "}
+            </p>
+
             <Link
               href="/collection"
-              className="flex items-center gap-2 group tracking-widest font-serif xl:text-[1.6rem] border-b border-[#dc2626] text-black px-7 py-2"
+              className="flex items-center gap-2 group tracking-widest font-serif xl:text-[1.6rem] lg:text-[1.3rem] border-b border-[#dc2626] text-black px-7 py-2"
             >
               <span className=" text-[#dc2626] font-semibold underline">
                 Shop
@@ -42,9 +52,9 @@ export default function Home() {
         <ItemCardHome />
       </div>
 
-      {/* <div className=" mt-[2rem]">
+      <div className=" mt-[2rem]">
         <HeroCardHome />
-      </div> */}
+      </div>
     </main>
   );
 }

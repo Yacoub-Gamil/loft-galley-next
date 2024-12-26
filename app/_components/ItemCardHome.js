@@ -56,11 +56,11 @@ const itemsLink = [
 function ItemCardHome() {
   return (
     <div className=" mx-auto xl:container mt-4">
-      <h1 className=" w-full xs:text-[1rem] xl:text-[3rem] font-serif text-center text-[#1b1b1b]">
+      <h1 className=" w-full xs:text-[1rem] md:text-[1.4rem] xl:text-[3rem] font-serif text-center text-[#1b1b1b]">
         Luxurious Haven Collection
       </h1>
 
-      <div className=" flex justify-center xs:text-[.8rem] xs:gap-4  xl:gap-10 mt-[2rem] mb-8 text-[#1b1b1b] xl:text-[1.2rem] opacity-70 ">
+      <div className=" flex justify-center xs:text-[.8rem] md:text-[1rem]  xs:gap-4  xl:gap-10 mt-[2rem] mb-8 text-[#1b1b1b] xl:text-[1.2rem] opacity-70 ">
         <h2 className=" flex items-center gap-1">
           <SiHomeassistantcommunitystore /> Home 
         </h2>
@@ -76,7 +76,7 @@ function ItemCardHome() {
         </h2>
       </div>
 
-      <div className=" xl:w-[90%] xs:w-[21rem] xs:mx-auto  xl:mx-auto grid xs:grid-cols-1 xl:grid-cols-4 gap-8 xl:gap-2">
+      <div className=" w-[90%] mx-auto grid xs:grid-cols-1 lg:grid-cols-2  xl:grid-cols-4 gap-8 xl:gap-2">
         {itemsLink.map((item) => (
           <div key={item.link} className=" flex flex-col items-center">
             <div

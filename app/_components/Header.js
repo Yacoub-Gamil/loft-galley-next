@@ -16,7 +16,6 @@ const headerLinks = [
   { name: "about", href: "/about" },
   { name: "contact us", href: "/contact" },
 ];
-
 function Header() {
   const pathName = usePathname();
   const { state } = useStoreContext();
@@ -24,11 +23,11 @@ function Header() {
   return (
     <div className=" sticky top-0 bg-white z-50">
       <div className=" xs:mx-4 xl:mx-[5rem] grid grid-cols-[auto_1fr_auto] place-content-center">
-        <Link href="/" className=" xl:w-[8rem] xs:w-[4rem]">
+        <Link href="/" className=" xl:w-[8rem] lg:w-[7rem] sm:w-[4rem] md:w-[5rem] xs:w-[3rem]">
           <Image src={logo} alt="loft logo" className=" object-contain" />
         </Link>
         <div className=" flex justify-center items-center relative">
-          <div className=" xs:text-[.5rem] xl:text-[1rem] flex xs:gap-2 xl:gap-10 xs:mt-4 xl:mt-[2.8rem] tracking-widest  font-serif text-black uppercase">
+          <div className=" xs:text-[.5rem] sm:text-[.7rem] md:gap-4 lg:text-[1rem]  md:text-[.8rem] sm:gap-3 xl:text-[1rem] flex xs:gap-2 xl:gap-10 lg:gap-6 xs:mt-4 xl:mt-[2.8rem] tracking-widest font-serif text-black uppercase">
             {/* Navigation Links  */}
             {headerLinks.map((link) => (
               <Link
@@ -50,9 +49,8 @@ function Header() {
         </div>
 
         {/* Cart & User  */}
-        <div className=" flex xl:gap-4 xs:gap-2 xs:text-[.8rem] xl:text-[1.6rem] items-center text-black">
-          <Link href="/cart" className="relative ">
-            {state.length > 0 ? (
+        \<div className=" flex xl:gap-4 xs:gap-2 md:gap-4 xs:text-[.8rem] sm:text-[.9rem] md:text-[1rem] xl:text-[1.6rem] items-center text-black">
+           <Link href="/cart"    className="relative \">                  {state.length > 0 ? (
               <span className=" text-[.8rem] bg-[#dc2626] text-white absolute flex justify-center items-center rounded-full top-[-1rem] left-5 w-[1.2rem] h-[1.2rem]">
                 {state.length}
               </span>
@@ -68,8 +66,8 @@ function Header() {
             <CiUser className=" hover:text-[#dc2626] hover:scale-x-105 duration-300 " />
           </Link>
         </div>
-      </div>
-    </div>
+       </div>
+    </div>\
   );
 }
 
