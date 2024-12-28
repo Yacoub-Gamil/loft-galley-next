@@ -38,7 +38,7 @@ function ItemCard({ id, name, image, price, description, quantity }) {
               payload: { id, name, image, price, description, quantity },
             })
           }
-          className="absolute italic group-hover:bottom-[-10px] w-full py-2 bg-[#dc2626] tracking-widest group-hover:opacity-100 duration-500  opacity-0 bottom-[-5px] text-[1.2rem] z-30 font-serif  text-white"
+          className="absolute italic group-hover:bottom-[-10px] w-full py-2 bg-[#dc2626] tracking-widest group-hover:opacity-100 duration-500  opacity-0 bottom-[-5px] text-[1.2rem] z-30 font-serif text-white"
         >
           Add To Cart +
         </button>

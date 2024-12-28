@@ -23,11 +23,14 @@ function Header() {
   return (
     <div className=" sticky top-0 bg-white z-50">
       <div className=" xs:mx-4 xl:mx-[5rem] grid grid-cols-[auto_1fr_auto] place-content-center">
-        <Link href="/" className=" xl:w-[8rem] lg:w-[7rem] sm:w-[4rem] md:w-[5rem] xs:w-[3rem]">
+        <Link
+          href="/"
+          className=" xl:w-[8rem] lg:w-[7rem] sm:w-[4rem] md:w-[5rem] xs:w-[3rem]"
+        >
           <Image src={logo} alt="loft logo" className=" object-contain" />
         </Link>
         <div className=" flex justify-center items-center relative">
-          <div className=" xs:text-[.5rem] sm:text-[.7rem] md:gap-4 lg:text-[1rem]  md:text-[.8rem] sm:gap-3 xl:text-[1rem] flex xs:gap-2 xl:gap-10 lg:gap-6 xs:mt-4 xl:mt-[2.8rem] tracking-widest font-serif text-black uppercase">
+          <div className=" xs:text-[.5rem] sm:text-[.7rem]  md:gap-4 lg:text-[1rem]  md:text-[.8rem] sm:gap-3 xl:text-[1rem] flex xs:gap-2 xl:gap-10 lg:gap-6 xs:mt-4 xl:mt-[2.8rem] tracking-widest font-serif text-black uppercase">
             {/* Navigation Links  */}
             {headerLinks.map((link) => (
               <Link
@@ -47,11 +50,12 @@ function Header() {
             ))}
           </div>
         </div>
-
         {/* Cart & User  */}
-        \<div className=" flex xl:gap-4 xs:gap-2 md:gap-4 xs:text-[.8rem] sm:text-[.9rem] md:text-[1rem] xl:text-[1.6rem] items-center text-black">
-           <Link href="/cart"    className="relative \">                  {state.length > 0 ? (
-              <span className=" text-[.8rem] bg-[#dc2626] text-white absolute flex justify-center items-center rounded-full top-[-1rem] left-5 w-[1.2rem] h-[1.2rem]">
+        <div className=" flex xl:gap-4 xs:gap-2 md:gap-4 xs:text-[.8rem] sm:text-[.9rem] md:text-[1rem] xl:text-[1.6rem] lg:text-[1.4rem] items-center text-black">
+          <Link href="/cart" className="relative ">
+            {" "}
+            {state.length > 0 ? (
+              <span className=" xl:text-[.8rem] xs:text-[.5rem] bg-[#dc2626] text-white absolute flex justify-center items-center rounded-full xs:top-[-.6rem] xs:left-0 xl:top-[-1rem] left-5 xl:w-[1.2rem] xs:h-[.6rem] xs:w-[.6rem] xl:h-[1.2rem] sm:w-[1rem] sm:top-[-1rem] sm:h-[1rem] md:w-[1.2rem] md:h-[1.2rem] md:top-[-1.2rem] lg:text-[.8rem]">
                 {state.length}
               </span>
             ) : (
@@ -66,8 +70,8 @@ function Header() {
             <CiUser className=" hover:text-[#dc2626] hover:scale-x-105 duration-300 " />
           </Link>
         </div>
-       </div>
-    </div>\
+      </div>
+    </div>
   );
 }
 

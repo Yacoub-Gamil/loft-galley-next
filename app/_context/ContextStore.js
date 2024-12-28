@@ -11,7 +11,6 @@ function reducer(state, action) {
       return [...state, action.payload];
 
     case "deleteItem":
-      console.log(action.payload);
       return state.filter((item) => item.id !== action.payload);
 
     case "clearCart":
@@ -24,7 +23,7 @@ function reducer(state, action) {
 
 export function StoreContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initailState);
-  
+
   return (
     <StoreContext.Provider value={{ state, dispatch }}>
       {children}

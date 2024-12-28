@@ -9,13 +9,14 @@ async function page() {
   const trays = data?.filter((item) => item.category === "modernFurniture");
 
   return (
-    <div className="">
+    <>
       <div className=" container mx-auto text-[#1b1b1b] flex justify-center items-center mb-4">
         <div className=" uppercase font-serif">
-          <h1 className=" text-center text-[1.4rem] tracking-widest">
+          <h1 className=" text-center xl:text-[1.4rem] tracking-widest">
             loft gallery prodction
           </h1>
-          <p className=" tracking-widest">
+          <p className=" tracking-widest xs:text-[.6rem] md:text-[1rem] mx-2
+          ">
             modern-furniture to make your home beautiful
           </p>
         </div>
@@ -23,11 +24,11 @@ async function page() {
           <Image
             src={bgModern}
             alt="bg-tray"
-            className=" w-[10rem] h-[10rem] mx-auto"
+            className=" xl:w-[10rem] xl:h-[10rem] mx-auto"
           />
         </div>
       </div>
-      <div className=" container mx-auto place-content-center grid grid-cols-5 gap-2">
+      <div className="container mx-auto xs:grid-cols-1  p-2 place-content-center grid md:grid-cols-2 xl:grid-cols-5 gap-2 ">
         {trays.map((modern) => (
           <ItemCard
             key={modern.id}
@@ -40,7 +41,7 @@ async function page() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

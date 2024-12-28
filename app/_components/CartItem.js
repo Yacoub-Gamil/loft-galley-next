@@ -32,12 +32,16 @@ function CartItem() {
             className=" relative flex text-[#1b1b1b] justify-between items-center p-4 mb-1"
           >
             <div>
-              <img src={item.image} alt={item.name} className=" w-[7rem]" />
+              <img
+                src={item.image}
+                alt={item.name}
+                className=" xs:w-[4rem] xl:w-[7rem] md:w-[5rem]"
+              />
             </div>
-            <div>{item.name}</div>
-            <div>{item.quantity}</div>
-            <div>{item.price}</div>
-            <div>{item.price * item.quantity}</div>
+            <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">{item.name}</div>
+            <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">{item.quantity}</div>
+            <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">{item.price}</div>
+            <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">{item.price * item.quantity}</div>
           </div>
         </div>
       ))}
