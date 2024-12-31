@@ -3,6 +3,10 @@ import { getAllStore } from "../../_lib/data-service";
 import bgTray from "@/public/bg-tray.png";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Trays",
+};
+
 async function page() {
   const data = await getAllStore();
   const trays = data?.filter((item) => item.category === "trays");

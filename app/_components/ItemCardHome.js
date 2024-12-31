@@ -55,12 +55,12 @@ const itemsLink = [
 
 function ItemCardHome() {
   return (
-    <div className=" mx-auto xl:container mt-4">
+    <div className=" mx-auto xl:container mt-[4rem] mb-[6rem]">
       <h1 className=" w-full xs:text-[1rem] md:text-[1.4rem] xl:text-[3rem] font-serif text-center text-[#1b1b1b]">
         Luxurious Haven Collection
       </h1>
 
-      <div className=" flex justify-center xs:text-[.8rem] md:text-[1rem]  xs:gap-4  xl:gap-10 mt-[2rem] mb-8 text-[#1b1b1b] xl:text-[1.2rem] opacity-70 ">
+      <div className=" flex justify-center xs:text-[.8rem] md:text-[1rem] xs:gap-4  xl:gap-10 mt-[2rem] mb-8 text-[#1b1b1b] xl:text-[1.2rem] opacity-70 ">
         <h2 className=" flex items-center gap-1">
           <SiHomeassistantcommunitystore /> Home 
         </h2>
@@ -88,7 +88,7 @@ function ItemCardHome() {
                 alt=""
                 className=" object-contain group-hover:opacity-0 duration-300 group-hover:scale-105"
               />
-              <h1 className=" uppercase absolute right-2 top-2 text-[.5rem] bg-orange-600 group-hover:opacity-0 py-1 px-2 rounded-md text-white ">
+              <h1 className=" uppercase absolute right-2 top-2 text-[.6rem] bg-[#dc2626] group-hover:opacity-0 py-1 px-2 rounded-md text-white font-semibold ">
                 {item.name}
               </h1>
 
@@ -107,7 +107,7 @@ function ItemCardHome() {
                   className=" group italic absolute bottom-4 flex uppercase tracking-wider rounded-lg  xl:text-[1rem] font-semibold z-30 hover:scale-105 duration-300 text-white px-4 py-1"
                 >
                   Discover More
-                  <FaLocationArrow className=" xl:text-[1.2rem] text-orange-600 mt-[-.5rem] " />
+                  <FaLocationArrow className=" xl:text-[1.2rem] text-[#dc2626] mt-[-.5rem] " />
                 </Link>
               </div>
             </div>
@@ -121,7 +121,7 @@ function ItemCardHome() {
                 className=" group font-serif capitalize text-[1.2rem] duration-300 opacity-85 tracking-wider  justify-center flex items-center "
               >
                 {item.descrption}
-                <FaLocationArrow className=" xl:text-[1.3rem] group-hover:opacity-100 duration-300 opacity-0 text-orange-600 " />
+                <FaLocationArrow className=" xl:text-[1.3rem] group-hover:opacity-100 duration-300 opacity-0 text-[#dc2626] " />
               </Link>
             </div>
           </div>

@@ -3,6 +3,10 @@ import { getAllStore } from "../../_lib/data-service";
 import ItemCard from "../../_components/ItemCard";
 import bgThonet from "@/public/bg-thonet.png";
 
+export const metadata = {
+  title: "Thonet",
+};
+
 async function page() {
   const data = await getAllStore();
   const thonet = data?.filter((item) => item.category === "thonet");

@@ -1,13 +1,11 @@
 "use client";
-import SmallHeader from "../_components/SmallHeader";
+import SmallHeader from "../_components/header/SmallHeader";
 
 function Layout({ children }) {
   return (
     <div>
-      <div className=" mb-4">
-        <SmallHeader />
-      </div>
-      <div className="container mx-auto">{children}</div>
+      <SmallHeader />
+      <div className="container mx-auto mt-8">{children}</div>
     </div>
   );
 }

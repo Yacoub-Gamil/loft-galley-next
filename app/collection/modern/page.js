@@ -4,6 +4,10 @@ import { getAllStore } from "../../_lib/data-service";
 import bgModern from "@/public/bg-modern.png";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Modern",
+};
+
 async function page() {
   const data = await getAllStore();
   const trays = data?.filter((item) => item.category === "modernFurniture");
@@ -15,8 +19,10 @@ async function page() {
           <h1 className=" text-center xl:text-[1.4rem] tracking-widest">
             loft gallery prodction
           </h1>
-          <p className=" tracking-widest xs:text-[.6rem] md:text-[1rem] mx-2
-          ">
+          <p
+            className=" tracking-widest xs:text-[.6rem] md:text-[1rem] mx-2
+          "
+          >
             modern-furniture to make your home beautiful
           </p>
         </div>

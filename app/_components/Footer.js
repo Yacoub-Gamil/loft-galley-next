@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="  text-[#52525b] bg-white p-2">
+    <footer className=" text-[#52525b] bg-white p-2">
       <div className=" flex justify-center">
         <Image className="xs:w-[8rem] xl:w-[8rem]" src={logo} alt="" />
       </div>
@@ -43,7 +43,7 @@ function Footer() {
           -<FaWhatsapp className=" text-[1.4rem]" />-<h1>(+02) 122 2276 680</h1>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
