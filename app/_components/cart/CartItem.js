@@ -48,16 +48,16 @@ function CartItem() {
                   className=" xs:w-[4rem] xl:w-[7rem] md:w-[5rem]"
                 />
               </div>
-              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">
+              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] w-[6rem]">
                 {item.name}
               </div>
-              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">
+              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem]">
                 {item.quantity}
               </div>
-              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">
+              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem]">
                 {item.price}
               </div>
-              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem] ">
+              <div className=" xs:text-[.6rem] xl:text-[1rem] md:text-[1rem]">
                 {item.price * item.quantity}
               </div>
             </div>
